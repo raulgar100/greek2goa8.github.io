@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html>
+  <head>
+  	<title>Sigma Alpha Epsilon</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link href="../css/introHCI.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <button class="openbtn" onclick="goBack()">Go Back</button>
+  </div>
+
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="../events.html"><i class="fa fa-fw fa-home"></i>Home</a>
+<!--         
+        <a href="profile.html"><i class="fa fa-fw fa-user-circle-o"></i>Profile</a>
+-->
+      <a href="../explore.html"><i class="fa fa-fw fa-search"></i>Explore</a>
+      <a href="../questionnaire_hub.html"><i class="fa fa-fw fa-question-circle"></i>Questionnaire</a>
+      <!--<a href="#"><i class="fa fa-fw fa-heart"></i>Favorites</a>-->
+      <a href="../home.html"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+    </div>
+
+    <div>
+      <!-- this png is good and well sized -->
+      <img src="../images/fratimages/sae_1.png" id=fratimages style="background-color: white; border: 5px solid #ffbe00;">
+    </div>
+
+    <div>
+      <h1>Sigma Alpha Epsilon</h1>
+    </div>
+    <div>
+      <p>Our mission statement is "To promote the highest standards of friendship, scholarship and service for our members based upon the ideals set forth by our Founders and as specifically enunciated in our creed."</p>
+    </div>
+    <hr>
+    <div>
+      <h1>Events</h1>
+    </div>
+
+    <div class="event_grid">
+      <table>
+        <tbody>
+          <tr id="event_header">
+            <td>Date</td>
+            <td>Time</td>
+            <td>Location</td>
+            <td>Description</td>
+          </tr>
+          <tr id="row1">
+            <td>09/01/18</td>
+            <td>2:00-4:00 PM</td>
+            <td>Center Hall, Room 209</td>
+            <td>Come meet the brothers. Snacks and drinks provided.</td>
+            <td><button onclick="addToCarousel(sae_r1)">Add Event</button></td>
+          </tr>
+          <tr id="row2">
+            <td>09/02/18</td>
+            <td>5:00-7:00 PM</td>
+            <td>Triton Track & Field Stadium</td>
+            <td>Soccer, flag football, and frisbee. We'll have refreshments and towels on hand.</td>
+            <td><button onclick="addToCarousel(sae_r2)">Add Event</button></td>
+          </tr>
+          <tr id="row3">
+            <td>09/03/18</td>
+            <td>8:00-10:00 PM</td>
+            <td>Price Center, Green Table Room</td>
+            <td>Game night with the brothers. We'll have pizza and soda.</td>
+            <td><button onclick="addToCarousel(sae_r3)">Add Event</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/greek2go.js"></script>
+    <script src="../js/fratpage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html>
+  <head>
+  	<title>Sigma Chi</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link href="../css/introHCI.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <button class="openbtn" onclick="goBack()">Go Back</button>
+  </div>
+
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="../events.html"><i class="fa fa-fw fa-home"></i>Home</a>
+<!--         
+        <a href="profile.html"><i class="fa fa-fw fa-user-circle-o"></i>Profile</a>
+-->
+      <a href="../explore.html"><i class="fa fa-fw fa-search"></i>Explore</a>
+      <a href="../questionnaire_hub.html"><i class="fa fa-fw fa-question-circle"></i>Questionnaire</a>
+      <!--<a href="#"><i class="fa fa-fw fa-heart"></i>Favorites</a>-->
+      <a href="../home.html"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+    </div>
+
+    <div>
+      <img src="../images/fratimages/sigmachi.png" id=fratpng style="background-color: white; border: 5px solid #ffbe00;">
+    </div>
+
+    <div>
+      <h1>Sigma Chi</h1>
+    </div>
+    <div>
+      <p>Sigma Chi is a brotherhood with roots in the collegiate experience that engenders a lifelong commitment to strive to achieve true friendship, equal justice and the fulfillment of learning as part of our overall responsibilities to the broader communities in which we live.</p>
+    </div>
+    <hr>
+    <div>
+      <h1>Events</h1>
+    </div>
+
+    <div class="event_grid">
+      <table>
+        <tbody>
+          <tr id="event_header">
+            <td>Date</td>
+            <td>Time</td>
+            <td>Location</td>
+            <td>Description</td>
+          </tr>
+          <tr id="row1">
+            <td>09/01/18</td>
+            <td>5:00-7:00 PM</td>
+            <td>Triton Track & Field</td>
+            <td>Join us for our annual Olympics event. Events include a bed race and apple bobbing.</td>
+            <td><button onclick="addToCarousel(sc_r1)">Add Event</button></td>
+          </tr>
+          <tr id="row2">
+            <td>09/02/18</td>
+            <td>12:00-2:00 PM</td>
+            <td>Price Center, Ballroom West</td>
+            <td>We formally invite you to a card tournmanet. Prizes include cash, electronics, and gift cards.</td>
+            <td><button onclick="addToCarousel(sc_r2)">Add Event</button></td>
+          </tr>
+          <tr id="row3">
+            <td>09/03/18</td>
+            <td>2:00-5:00 PM</td>
+            <td>Kearney Mesa Bowl</td>
+            <td>Come join the brothers of Sigma Chi for a few rounds of bowling.</td>
+            <td><button onclick="addToCarousel(sc_r3)">Add Event</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/greek2go.js"></script>
+    <script src="../js/fratpage.js"></script>
+  </body>
+</html>
