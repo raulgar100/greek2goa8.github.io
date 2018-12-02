@@ -1,0 +1,82 @@
+#logo {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+#logo img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+#boxes {
+	text-align: center;
+}
+
+#boxes .image {
+	display: inline-block;
+	height: 100%;
+	max-height: 60px;
+	width: auto;
+  background-color: white;
+}
+
+#boxes .arrow {
+	height: auto;
+	width: 10%;
+	padding: 100px 0;
+  background-color: white;
+}
+
+body {
+  background-color: #182B49;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #005e94;
+  color: #ffcf00;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.login {
+  border-color: white;
+  border-width: 1px;
+  padding: 16px;
+	height: auto;
+	width: 30%;
+	margin: 0 auto;
+  color: white;
+}
+
+.login .links a {
+  float: left;
+  color: white;
+}
+
+.login .links #createaccount {
+	float: left;
+}
+
+.login .links #forgotpassword {
+  float: right;
+  color: white;
+}
