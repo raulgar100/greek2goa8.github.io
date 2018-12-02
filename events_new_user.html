@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>
+  <head>
+  	<title>Events - New User</title>	
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link href="css/introHCI.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <!-- NOTE: Menu & Back Buttons moved outside of body -->
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <button class="openbtn" onclick="goBack()">Go Back</button>
+  </div>
+
+  <body>
+
+    <div class="container">
+      <h1>Questionnaire Hub</h1>
+      <p>In the Questionnaire Hub, you can read a description of the questionnaire and matching process and click Take Questionnaire to take the quesionnaire.</p>
+
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="events_new_user.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <!--<a href="profile.html"><i class="fa fa-fw fa-user-circle-o"></i>Profile</a>-->
+        <a href="explore_new_user.html"><i class="fa fa-fw fa-search"></i>Explore</a>
+        <a href="questionnaire_new_user.html"><i class="fa fa-fw fa-question-circle"></i>Questionnaire</a>
+        <!--<a href="#"><i class="fa fa-fw fa-heart"></i>Favorites</a>-->
+        <a href="home.html"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+      </div>
+
+      <hr>
+
+      <h2>Questionnaire and Matching Process</h2>
+      <p>Users can see which fraternities they best match with by taking our questionnaire, which lists five key attributes - Academics, Athletics, Leadership, Social, and Philanthropy. While these all hold some importance to fraternities, the level of importance varies by each organization. Each attribute has five buttons next to it, labeled one to five, with each number corresponding to how important each one is to the user. Specifically, the scale of importance for each attribute is as follows: 1 = not at all, 2 = very little, 3 = somewhat, 4 = very much, 5 = completely.</p>
+      <p>Our implementation allows users to easily update their values for each attribute if they made a mistake by clicking an incorrect number or simply want to update their choice of a value. When the user clicks the ‘Submit’ button, our algorithm calculates the match percentage between the user and each frat. After the algorithm has finished, the top three fraternities based on match percentage are displayed on the next page. This way, we create a more streamlined approach to help users determine which fraternities align most closely with their values.</p>
+
+      <p>You have no events. Click on Take Questionnaire to see which Greek organizations best align with your personal attributes.</p>
+
+      <form action="questionnaire_new_user.html">
+        <div class="questionnaire-button">
+          <button type="submit" class="questionnairebtn">Take Questionnaire</button>
+        </div>
+      </form>
+
+      <!--<a href="questionnaire_new_user.html" class="button">Take Questionnaire</a>-->
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/greek2go.js"></script>
+
+  </body>
+</html>
