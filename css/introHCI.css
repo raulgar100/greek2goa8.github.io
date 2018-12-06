@@ -5,7 +5,6 @@
 
 /* BODY CSS */
 body {
-     /*background-image:  url("../images/geisellib.png");*/
      background-color: #182B49;
      background-repeat: no-repeat;
      background-size: 100% 100%;
@@ -13,6 +12,13 @@ body {
      text-align: center;
      color: white;
 }
+
+/* body .sidelogo{
+	background-image:  url("../images/greek2gofinalfinalBversion.png");
+	background-position: right;
+	height: inherit;
+	background-size: 333px 251px;
+} */
 
 #backbtn {
   display: inline-block;
@@ -190,45 +196,45 @@ i {
   background-color: #005e93;
   width: 7%;
 }
-.academics-number-button:focus{
+/* .academics-number-button:focus{
   background-color: green;
-}
+} */
 
 
 .athletics-number-button {
   background-color: #005e93;
   width: 7%;
 }
-.athletics-number-button:focus {
+/* .athletics-number-button:focus {
   background-color: green;
-}
+} */
 
 
 .leadership-number-button {
   background-color: #005e93;
   width: 7%;
 }
-.leadership-number-button:focus {
+/* .leadership-number-button:focus {
   background-color: green;
-}
+} */
 
 
 .social-number-button {
   background-color: #005e93;
   width: 7%;
 }
-.social-number-button:focus {
+/* .social-number-button:focus {
   background-color: green;
-}
+} */
 
 
 .philanthropy-number-button {
   background-color: #005e93;
   width: 7%;
 }
-.philanthropy-number-button:focus {
+/* .philanthropy-number-button:focus {
   background-color: green;
-}
+} */
 
 
 
@@ -445,4 +451,14 @@ div .sidelogo{
 #fratpng{
   width: 250px;
   height: 123px;
+	left:55px;
+}
+/* #fratimages{
+	left:55px;
+} */
+
+/* RAUL EDIT FOR THE COLOR TOGGLE FUNCTION */
+.selected {
+    color: white;
+    background:green
 }
