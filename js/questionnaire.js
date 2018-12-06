@@ -49,7 +49,7 @@ container_2.append('<span id="val_2">' + "Current Athletics Value: " + athletics
 $('.athletics-number-button').on('click',function() {
     // get the button that was clicked
     var buttonClicked = $(this).html();
-    
+
     // store button value into athletics_value
     athletics_value = buttonClicked;
     console.log("Athletics: " + athletics_value);
@@ -80,7 +80,7 @@ container_3.append('<span id="val_3">' + "Current Leadership Value: " + leadersh
 $('.leadership-number-button').on('click',function() {
     // get the button that was clicked
     var buttonClicked = $(this).html();
-    
+
     // store button value into leadership_value
     leadership_value = buttonClicked;
     console.log("Leadership: " + leadership_value);
@@ -111,7 +111,7 @@ container_4.append('<span id="val_4">' + "Current Social Value: " + social_value
 $('.social-number-button').on('click',function() {
     // get the button that was clicked
     var buttonClicked = $(this).html();
-    
+
     // store button value into social_value
     social_value = buttonClicked;
     console.log("Social: " + social_value);
@@ -119,7 +119,7 @@ $('.social-number-button').on('click',function() {
     // update value
     document.getElementById("val_4").textContent="Current Social Value: " + social_value;
 
-    didChooseAllValues();    
+    didChooseAllValues();
 });
 
 
@@ -142,7 +142,7 @@ container_5.append('<span id="val_5">' + "Current Philanthropy Value: " + philan
 $('.philanthropy-number-button').on('click',function() {
     // get the button that was clicked
     var buttonClicked = $(this).html();
-    
+
     // store button value into philanthropy_value
     philanthropy_value = buttonClicked;
     console.log("Philanthropy: " + philanthropy_value);
@@ -226,7 +226,7 @@ var alpha_lambda_mu = {
     leadership_value: 5,
     social_value: 5,
     philanthropy_value: 3,
-    homepage: "fratpage/Alpha Lambda Mu.html"    
+    homepage: "fratpage/Alpha Lambda Mu.html"
 };
 var alpha_lambda_mu_values = [1, 2, 5, 5, 3];
 
@@ -238,7 +238,7 @@ var lambda_chi_alpha = {
     leadership_value: 5,
     social_value: 5,
     philanthropy_value: 2,
-    homepage: "fratpage/Lambda Chi Alpha.html"    
+    homepage: "fratpage/Lambda Chi Alpha.html"
 };
 var lambda_chi_alpha_values = [4, 4, 5, 5, 2];
 
@@ -250,7 +250,7 @@ var phi_gamma_delta = {
     leadership_value: 1,
     social_value: 4,
     philanthropy_value: 3,
-    homepage: "fratpage/Phi Gamma Delta.html"    
+    homepage: "fratpage/Phi Gamma Delta.html"
 };
 var phi_gamma_delta_values = [2, 5, 1, 4, 3];
 
@@ -262,7 +262,7 @@ var pi_kappa_alpha = {
     leadership_value: 1,
     social_value: 5,
     philanthropy_value: 1,
-    homepage: "fratpage/Pi Kappa Alpha.html"    
+    homepage: "fratpage/Pi Kappa Alpha.html"
 };
 var pi_kappa_alpha_values = [2, 5, 1, 5, 1];
 
@@ -274,7 +274,7 @@ var sigma_alpha_epsilon = {
     leadership_value: 3,
     social_value: 2,
     philanthropy_value: 4,
-    homepage: "fratpage/Sigma Alpha Epsilon.html"    
+    homepage: "fratpage/Sigma Alpha Epsilon.html"
 };
 var sigma_alpha_epsilon_values = [5, 5, 3, 2, 4];
 
@@ -286,7 +286,7 @@ var sigma_alpha_mu = {
     leadership_value: 4,
     social_value: 2,
     philanthropy_value: 1,
-    homepage: "fratpage/Sigma Alpha Mu.html"    
+    homepage: "fratpage/Sigma Alpha Mu.html"
 };
 var sigma_alpha_mu_values = [3, 4, 4, 2, 1];
 
@@ -298,7 +298,7 @@ var sigma_nu = {
     leadership_value: 5,
     social_value: 4,
     philanthropy_value: 5,
-    homepage: "fratpage/Sigma Nu.html"    
+    homepage: "fratpage/Sigma Nu.html"
 };
 var sigma_nu_values = [3, 1, 5, 4, 5];
 
@@ -310,7 +310,7 @@ var sigma_phi_epsilon = {
     leadership_value: 1,
     social_value: 4,
     philanthropy_value: 2,
-    homepage: "fratpage/Sigma Phi Epsilon.html"    
+    homepage: "fratpage/Sigma Phi Epsilon.html"
 };
 var sigma_phi_epsilon_values = [1, 2, 1, 4, 2];
 
@@ -322,7 +322,7 @@ var tau_kappa_epsilon = {
     leadership_value: 2,
     social_value: 1,
     philanthropy_value: 5,
-    homepage: "fratpage/Tau Kappa Epsilon.html"    
+    homepage: "fratpage/Tau Kappa Epsilon.html"
 };
 var tau_kappa_epsilon_values = [1, 1, 2, 1, 5];
 
@@ -334,7 +334,7 @@ var triangle = {
     leadership_value: 3,
     social_value: 3,
     philanthropy_value: 5,
-    homepage: "fratpage/Triangle.html"    
+    homepage: "fratpage/Triangle.html"
 };
 var triangle_values = [4, 2, 3, 3, 5];
 
@@ -491,7 +491,7 @@ for (var index = 0; index < top_3; index++) {
     // APPEND FRAT NAME AND MATCH PERCENTAGE TO CONTAINER TO BE DISPLAYED ON MATCHES PAGE
     container.append('<div class="name">' + frats_to_values[index][0] +'</div>');
     container.append('<div class="match_percentage">' + "Match Percentage: " + frats_to_values[index][1] + "%" + '</div>');
-    container.append('<a href="fratpage/' + frats_to_values[index][0] + '.html"> Visit Fraternity Page' + '</a>');    
+    container.append('<a href="fratpage/' + frats_to_values[index][0] + '.html"> Visit Fraternity Page' + '</a>');
 }
 
 
@@ -511,5 +511,18 @@ for (var index = 0; index < frats.length; index++) {
     // APPEND FRAT NAME AND MATCH PERCENTAGE TO CONTAINER TO BE DISPLAYED ON EXPLORE PAGE
     container.append('<div class="name">' + frats_to_values[index][0] +'</div>');
     container.append('<div class="match_percentage">' + "Match Percentage: " + frats_to_values[index][1] + "%" + '</div>');
-    container.append('<a href="fratpage/' + frats_to_values[index][0] + '.html"> Visit Fraternity Page' + '</a>');    
+    container.append('<a href="fratpage/' + frats_to_values[index][0] + '.html"> Visit Fraternity Page' + '</a>');
 }
+
+// RAUL JS FOR BUTTON COLOR Change
+// $( "button#jQueryColorChange" ).click(function() {
+$( ".academics-number-button" ).click(function() {
+
+  $('.academics-number-button selected').not(this).removeClass('selected');
+  $(this).toggleClass( "selected" );
+
+  // $(".selected").toggleClass("academics-number-button");
+
+  // $(this).toggleClass( "selected" );
+  // document.getElementsByClassName('academics-number-button').style.background = '#000000';
+   });
